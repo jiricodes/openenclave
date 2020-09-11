@@ -1,4 +1,4 @@
-# Building Open Enclave SDK Samples on Linux
+# Open Enclave SDK Samples
 
 All the samples that come with the Open Enclave SDK installation share a similar directory structure and build instructions. This document describes how to setup, build, sign, and run these samples.
 
@@ -6,15 +6,15 @@ All the samples that come with the Open Enclave SDK installation share a similar
 
 ### How Sample source code directories were structured
 
-Open Enclave SDK helps developers build enclave applications. An enclave application is partitioned into an untrusted component (called a host) and a trusted component (called an enclave). An enclave is a secure container whose memory (text and data) is protected from access by outside entities, including the host, privileged users, and even the hardware. All functionality that needs to be run in a Trusted Execution Environment (TEE) should be compiled into the enclave binary. The enclave may run in an untrusted environment with the expectation that secrets will not be compromised. A host is a normal user mode application that loads an enclave into its address space before starting interacting with an enclave. 
+Open Enclave SDK helps developers build enclave applications. An enclave application is partitioned into an untrusted component (called a host) and a trusted component (called an enclave). An enclave is a secure container whose memory (text and data) is protected from access by outside entities, including the host, privileged users, and even the hardware. All functionality that needs to be run in a Trusted Execution Environment (TEE) should be compiled into the enclave binary. The enclave may run in an untrusted environment with the expectation that secrets will not be compromised. A host is a normal user mode application that loads an enclave into its address space before starting interacting with an enclave.
 
 ![Sample components diagram](sampledirstructure.png)
 
-## Samples
-
-### To build the samples
+### Building the Samples
 
 The steps required to build and run the samples on Linux is described in [BuildSamplesLinux.md](./BuildSamplesLinux.md). In order to build and run the samples on Windows, please see [BuildSamplesWindows.md](./BuildSamplesWindows.md).
+
+## Samples
 
 The following samples demonstrate how to develop enclave applications using OE APIs. It's recommended to go through the following samples in the order listed.
 
